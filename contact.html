@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Contact Page</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="contact-main">
+        <div>
+            <h1>Contact Me</h1>
+        <section>
+             <span>
+                 <nav class="navigation-about">
+                    <a href="main.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="workouts.html">Workouts</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </span>
+        </section>
+            <h2 class="contact-header">
+                Email:
+            </h2>
+            <p class="email">rjericho1227@gmail.com</p>
+            <h2 class="contact-header">
+                Phone Number:
+            </h2>
+            <p class="number">956-329-8578</p>
+            
+            <h2 class="contact-header">Send Feedback</h2>
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                <label for="message">Type Here:</label>
+                <textarea type="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+                <p id="confirmed">Thank you for your feedback!</p>
+            </form>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; JPR Fitness & Nutrition; 2025
+        </p>
+    </footer>
+    
+
+    <script>
+        document.querySelector("form").onsubmit=function(event){
+            event.preventDefault();
+            document.getElementById("confirmed").style.display = "block";
+        };
+    </script>
+</body>
+</html>
